@@ -1,0 +1,52 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+<script>
+const people = [
+  'Benjamin Franklin',
+  'Thomas Edison',
+  'Franklin Roosevelt',
+  'Napolean Bonaparte',
+  'Abraham Lincoln',
+  'Mother Theresa',
+  'Mahatma Gandhi',
+  'Winston Churchill',
+  'Charles Darwin',
+  'Albert Einstein',
+  'Pablo Picasso',
+  'Ludwig Beethoven',
+  'Walt Disney',
+  'Henry Ford',
+  'Steve Jobs'
+];
+
+// EXERCISE
+// 1 - What is the index of Mahatma Gandhi in this list of people?
+   
+   console.log(people.indexOf("Mahatma Gandhi"));
+
+//2 - Get Pablo Picasso from the people array
+  
+   //Method 1
+   const indexPablo = people.indexOf("Pablo Picasso");
+   console.log(people[indexPablo]);
+
+  // Method 2
+
+   console.log(people.find(function(element){
+       return element==="Pablo Picasso";
+   }))
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
