@@ -39,7 +39,55 @@ const people = [
 
    console.log(people.find(function(element){
        return element==="Pablo Picasso";
-   }))
+   }));
+
+   // 3 - Set Walt Disney to Disneyland
+     const waltDisneyIndex = people.indexOf("Walt Disney");
+     people[waltDisneyIndex] = "Disneyland";
+     console.log(people[waltDisneyIndex]);
+
+     // 4 Add your best friend's name to the end of the list
+     const bestFriend = ["Mayelin Romero"];
+      let newArray = people.concat(bestFriend);
+      console.log(newArray);
+
+      //5- Add another friend's name to the start of the list
+      const newFriend = ["Heriberto Alcantara"];
+
+      const newestArray = newFriend.concat(newArray);
+      console.log(newestArray);
+
+     // 6 - Add your name after Winston Churchill in the list
+
+     const winstonIndex = people.indexOf("Winston Churchill");
+     const firtsPart = people.slice(0,winstonIndex + 1);
+    const myName = ["Joel Hernandez"];
+    const secondPart = people.slice(winstonIndex+1);
+    const newPeopleArray = firtsPart.concat(myName,secondPart);
+    console.log(newPeopleArray);
+
+    // 7 Remove Benjamin Franklin from this list
+
+    const benjaminIndex = people.indexOf("Benjamin Franklin");
+    const array = people.slice(benjaminIndex+1);
+    console.log(array);
+
+    // 8 - Remove Steve Jobs from this list
+    const steveJobsIndex = people.indexOf("Steve Jobs");
+    const array1 = people.slice(0,steveJobsIndex);
+    console.log(array1);
+
+   // 9 - Remove Napolean Bonaparte from this list
+
+   const napoleonIndex = people.indexOf("Napolean Bonaparte");
+   const firstPartArray = people.slice(0,napoleonIndex);
+   const secondPartArray = people.slice(napoleonIndex+1);
+  const arrayCombined = firstPartArray.concat(secondPartArray);
+  console.log(arrayCombined);
+   
+
+     
+     
 
 
 
